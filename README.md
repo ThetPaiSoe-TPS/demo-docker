@@ -1,8 +1,12 @@
 # Task Manager
 
 A full-stack task management application built with **React** (frontend) and **Laravel 12** (backend), containerized with **Docker**.
+
+
 ![Image](https://github.com/user-attachments/assets/0b26ba89-6750-4aec-ac16-6d1a4079f465)
 [Uploading "docker-demo.mp4"
+
+
 ](https://github.com/user-attachments/assets/0099d648-0044-43ae-aaef-74fd62acdfc1)
 ---
 
