@@ -2,8 +2,8 @@
 
 A full-stack task management application built with **React** (frontend) and **Laravel 12** (backend), containerized with **Docker**.
 
-Uploading "docker-demo.mp4"
-
+[Uploading "docker-demo.mp4"
+](https://github.com/user-attachments/assets/0099d648-0044-43ae-aaef-74fd62acdfc1)
 ---
 
 ## Features
