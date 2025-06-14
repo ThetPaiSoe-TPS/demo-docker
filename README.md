@@ -93,5 +93,4 @@ MIT
 ---
 
 ## Author
-
-Your Name
+Thet Pai Soe
