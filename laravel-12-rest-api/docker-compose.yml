@@ -1,0 +1,43 @@
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: laravel_backend
+        image: php:8.3-cli
+        ports:
+            - "8000:8000"
+        working_dir: /var/www/html
+        volumes:
+            - ./:/var/www/html
+        command: php artisan serve --host=0.0.0.0 --port=8000
+        depends_on:
+            - mysql
+
+    mysql:
+        image: mysql:8
+        container_name: laravel_mysql
+        environment:
+            MYSQL_DATABASE: task-manager
+            MYSQL_USER: laravel
+            MYSQL_PASSWORD: secret
+            MYSQL_ROOT_PASSWORD: root
+        ports:
+            - "3306:3306"
+        volumes:
+            - dbdata:/var/lib/mysql
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: laravel_phpmyadmin
+        environment:
+            PMA_HOST: mysql
+            PMA_USER: laravel
+            PMA_PASSWORD: secret
+        ports:
+            - "8080:80"
+        depends_on:
+            - mysql
+
+volumes:
+    dbdata:
