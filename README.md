@@ -7,7 +7,7 @@ A full-stack task management application built with **React** (frontend) and **L
 
 
 
-](https://github.com/user-attachments/assets/0099d648-0044-43ae-aaef-74fd62acdfc1)
+(https://github.com/user-attachments/assets/0099d648-0044-43ae-aaef-74fd62acdfc1)
 ---
 
 ## Features
